@@ -8,7 +8,7 @@ export default function Skills() {
       id="skills"
       style={{
         padding: "80px 20px",
-        background: "linear-gradient(135deg, #f3e8ff, #ffffff)"
+        background: "linear-gradient(135deg, #f3e8ff, #ffffff)",
       }}
     >
       <div style={{ textAlign: "center", marginBottom: "40px" }}>
@@ -17,7 +17,7 @@ export default function Skills() {
         </Title>
       </div>
 
-      <Row gutter={[24, 24]} justify="center">
+      <Row gutter={[32, 32]} justify="center"> {/* increased gutter for spacing */}
         {/* Frontend */}
         <Col xs={24} md={12}>
           <Card
@@ -27,20 +27,34 @@ export default function Skills() {
               borderRadius: "16px",
               boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
               textAlign: "center",
+              marginBottom: "20px", // extra gap
             }}
           >
-            <Tag color="blue" style={{ fontSize: "14px", padding: "6px 12px" }}>
-              React.js
-            </Tag>
-            <Tag color="geekblue" style={{ fontSize: "14px", padding: "6px 12px" }}>
-              React Native
-            </Tag>
-            <Tag color="cyan" style={{ fontSize: "14px", padding: "6px 12px" }}>
-              TypeScript
-            </Tag>
-            <Tag color="purple" style={{ fontSize: "14px", padding: "6px 12px" }}>
-              Flutter
-            </Tag>
+          <Tag 
+  color="blue" 
+  style={{ fontSize: "14px", padding: "6px 12px", margin: "6px" }}
+>
+  React.js
+</Tag>
+<Tag 
+  color="geekblue" 
+  style={{ fontSize: "14px", padding: "6px 12px", margin: "6px" }}
+>
+  React Native
+</Tag>
+<Tag 
+  color="cyan" 
+  style={{ fontSize: "14px", padding: "6px 12px", margin: "6px" }}
+>
+  TypeScript
+</Tag>
+<Tag 
+  color="purple" 
+  style={{ fontSize: "14px", padding: "6px 12px", margin: "6px" }}
+>
+  Flutter
+</Tag>
+
           </Card>
         </Col>
 
@@ -53,6 +67,7 @@ export default function Skills() {
               borderRadius: "16px",
               boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
               textAlign: "center",
+              marginBottom: "20px",
             }}
           >
             <Tag color="magenta" style={{ fontSize: "14px", padding: "6px 12px" }}>
@@ -73,6 +88,7 @@ export default function Skills() {
               borderRadius: "16px",
               boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
               textAlign: "center",
+              marginBottom: "20px",
             }}
           >
             <Tag color="gold" style={{ fontSize: "14px", padding: "6px 12px" }}>
@@ -93,6 +109,7 @@ export default function Skills() {
               borderRadius: "16px",
               boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
               textAlign: "center",
+              marginBottom: "20px",
             }}
           >
             <Tag color="red" style={{ fontSize: "14px", padding: "6px 12px" }}>
