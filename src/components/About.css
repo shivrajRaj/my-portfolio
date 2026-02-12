@@ -1,6 +1,6 @@
 /* ===== ABOUT SECTION ===== */
 
-.about-section {
+/* .about-section {
   padding: 100px 8%;
   background: #f8fafc;
 }
@@ -27,11 +27,11 @@
   display: block;
   margin: 15px auto 0;
   border-radius: 2px;
-}
+} */
 
 /* ===== CONTENT GRID ===== */
 
-.about-grid {
+/* .about-grid {
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
@@ -48,11 +48,11 @@
   line-height: 1.9;
   color: #334155;
   margin-bottom: 25px;
-}
+} */
 
 /* ===== HIGHLIGHT CARD ===== */
 
-.about-highlights {
+/* .about-highlights {
   flex: 1;
   min-width: 280px;
 }
@@ -84,10 +84,148 @@
   left: 0;
   color: #2563eb;
   font-weight: bold;
-}
+} */
 
 /* ===== RESPONSIVE ===== */
 
+/* @media (max-width: 900px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-item {
+    padding-left: 0;
+  }
+
+  .highlight-item::before {
+    position: relative;
+    margin-right: 8px;
+  }
+} */
+
+.about-section {
+  padding: 80px 8%;
+  background: #f8fafc;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== GRID ===== */
+.about-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center; /* <-- CENTER VERTICALLY */
+  justify-content: center; /* <-- CENTER HORIZONTALLY if extra space */
+}
+
+/* ===== PROFILE CARD ===== */
+.about-profile {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTER IMAGE + NAME + EMAIL */
+}
+
+/* ===== TEXT AREA ===== */
+.about-text {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* CENTER TEXT VERTICALLY relative to photo */
+  text-align: left;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+.about-intro {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+/* Regular paragraphs */
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+/* ===== HIGHLIGHTS ===== */
+.about-highlights {
+  margin-top: 50px;
+}
+
+.highlight-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.15);
+}
+
+.highlight-item {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #1e293b;
+  position: relative;
+  padding-left: 25px;
+}
+
+.highlight-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .about-grid {
     flex-direction: column;
@@ -101,5 +239,10 @@
   .highlight-item::before {
     position: relative;
     margin-right: 8px;
+  }
+
+  .about-profile img {
+    width: 180px;
+    height: 180px;
   }
 }

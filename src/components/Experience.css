@@ -1,5 +1,4 @@
-/* ===== EXPERIENCE SECTION ===== */
-
+/* 
 .experience-section {
   padding: 100px 8%;
   background: #ffffff;
@@ -29,7 +28,6 @@
   border-radius: 2px;
 }
 
-/* ===== CARD STYLE ===== */
 
 .experience-card {
   background: #f8fafc;
@@ -76,4 +74,111 @@
   left: 0;
   color: #2563eb;
   font-weight: bold;
+} */
+
+.experience-section {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.experience-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.experience-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== CARD ===== */
+.experience-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== ROLE & COMPANY ===== */
+.role-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.company-duration {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIBILITIES ===== */
+.responsibility-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.responsibility-item {
+  margin-bottom: 12px;
+  color: #334155;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 22px;
+}
+
+.responsibility-item::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 5%;
+  }
+
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .role-title {
+    font-size: 1.2rem;
+  }
+
+  .company-duration {
+    font-size: 0.9rem;
+  }
+
+  .responsibility-item {
+    font-size: 0.9rem;
+  }
 }

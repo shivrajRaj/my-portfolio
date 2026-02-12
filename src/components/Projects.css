@@ -1,4 +1,4 @@
-/* ===== PROJECTS SECTION ===== */
+/* 
 
 .projects-section {
   padding: 100px 8%;
@@ -29,7 +29,7 @@
   border-radius: 2px;
 }
 
-/* ===== GRID ===== */
+
 
 .projects-grid {
   display: grid;
@@ -37,7 +37,7 @@
   gap: 40px;
 }
 
-/* ===== CARD ===== */
+
 
 .project-card {
   background: white;
@@ -67,7 +67,7 @@
   line-height: 1.6;
 }
 
-/* ===== TECH TAGS ===== */
+
 
 .tech-stack {
   margin-bottom: 15px;
@@ -84,7 +84,7 @@
   margin-bottom: 8px;
 }
 
-/* ===== BULLETS ===== */
+
 
 .project-points {
   list-style: none;
@@ -105,4 +105,130 @@
   left: 0;
   color: #2563eb;
   font-weight: bold;
+} */
+
+.projects-section {
+  padding: 80px 8%;
+  background: #f1f5f9;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.projects-title::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== GRID ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* ===== CARD ===== */
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== TITLE & DESCRIPTION ===== */
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ===== TECH BADGES ===== */
+.tech-stack {
+  margin-bottom: 15px;
+}
+
+.tech-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+/* ===== POINTS ===== */
+.project-points {
+  list-style: disc;
+  padding-left: 20px;
+  color: #334155;
+}
+
+.project-point {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 5%;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .project-point {
+    font-size: 0.9rem;
+  }
 }
